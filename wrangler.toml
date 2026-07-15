@@ -14,4 +14,4 @@ database_id = "35349f49-4dcd-456a-baa4-ca6ed2d56aff"
 # FROM_EMAIL) are set in the Pages dashboard or via:
 #   npx wrangler pages secret put TURNSTILE_SECRET
 [vars]
-SITE_ORIGIN = "https://roninforge.jp"
+SITE_ORIGIN = "https://ronin-forge.store"
