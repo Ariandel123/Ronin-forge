@@ -1,0 +1,8 @@
+# Copy to `.dev.vars` for local `wrangler pages dev` (git-ignored).
+# Turnstile TEST keys below always pass — replace with real keys in production.
+
+TURNSTILE_SECRET=1x0000000000000000000000000000000AA
+RESEND_API_KEY=
+OWNER_EMAIL=you@example.com
+FROM_EMAIL=Ronin Forge <onboarding@resend.dev>
+SITE_ORIGIN=http://localhost:5173

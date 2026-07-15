@@ -1,0 +1,17 @@
+# Cloudflare Pages + Functions config for Ronin Forge.
+name = "ronin-forge"
+compatibility_date = "2024-11-01"
+pages_build_output_dir = "dist"
+
+# D1 database binding (available as env.DB in functions).
+# Fill database_id after: npx wrangler d1 create ronin-forge
+[[d1_databases]]
+binding = "DB"
+database_name = "ronin-forge"
+database_id = "REPLACE_WITH_D1_ID"
+
+# Non-secret vars. Secrets (TURNSTILE_SECRET, RESEND_API_KEY, OWNER_EMAIL,
+# FROM_EMAIL) are set in the Pages dashboard or via:
+#   npx wrangler pages secret put TURNSTILE_SECRET
+[vars]
+SITE_ORIGIN = "https://roninforge.jp"
